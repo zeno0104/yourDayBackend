@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
 app.use("/", require("./routes/user"));
+app.use("/", require("./routes/content"));
 
 app.listen(3000, () => {
   console.log("서버 실행 중");
